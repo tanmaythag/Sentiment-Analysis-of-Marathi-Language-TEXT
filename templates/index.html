@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Sentiment Analysis</title>
+    <style>
+        body{
+            background-color: #15172b;
+        }
+        h1{
+            text-align: center;
+            font-family:sans-serif;
+            font-size: 50px;
+            color: #27a6ac;
+        }
+        .de{ font-family: sans-serif;
+        font-size: 20px;
+        color: #3d75b1;
+        text-align: center;}
+        hr.rounded {
+          
+            width: 550px;
+   border-top: 8px solid #3d75b1;
+  border-radius: 8px;
+}
+        input.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#3d75b1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #27a6ac;
+}
+
+input.button:hover {background-color: #3e8e41}
+
+input.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h1>Put Your Comment Here !</h1>
+     <hr class="rounded">
+             <p class="de">Will give the sentiment</p>
+<br>
+<br>
+
+ <center>
+      <form action = "/result" method = "POST">
+
+         <textarea name="comment" rows = "5" cols = "40" placeholder="Enter your text here" value="enter here">
+            
+         </textarea><br>
+          <br>
+<br>
+<br>
+         <input class="button" type = "submit" value = "submit" />
+     </form></center>
+
+</body>
+
+</html>
